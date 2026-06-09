@@ -46,6 +46,14 @@ body p {
     background-image: url(images/indigoHill.png);
 }
 
+.waveDeco.studyBook {
+    background-color: #ff80c7;
+    mask-image: url(images/whiteHill.png);
+    mask-size: contain;
+    mask-repeat: repeat-x;
+    mask-position: center bottom;
+}
+
 .waveDeco.rotate180 {
     transform: rotate(180deg);
     margin-bottom: -1.5em;
