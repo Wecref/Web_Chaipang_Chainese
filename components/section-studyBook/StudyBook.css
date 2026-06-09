@@ -33,6 +33,12 @@
     align-self: flex-end;
 }
 
+@media screen and (max-width: 944px) {
+    .contents-card.studyBook .main > picture {
+        display: none;
+    }
+}
+
 .contents-card.studyBook .main picture img.dora {
     max-width: 201px;
     width: 6.7em;
