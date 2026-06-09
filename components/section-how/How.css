@@ -1,16 +1,36 @@
 @charset "UTF-8";
 
 .contents-card.how {
-    background-image: url("../../shared/images/indigoWallpaper02.png");
-
+    position: relative;
     margin: -1em 0;
     padding: 5em 0;
 }
 
+.contents-card.how > picture.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 108%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.contents-card.how > picture.bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.contents-card.how .main .tutorial {
+    row-gap: 0;
+}
+
 .contents-card.how .main .tutorial img {
-    max-width: 420px;
-    width: 14em;
-    margin: 1em;
+    width: 15.9em;
+    height: auto;
+    margin: 0 1em;
 }
 
 .contents-card.how .titleStar h1 {

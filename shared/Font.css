@@ -17,3 +17,8 @@
     font-family: "NanumSquareL";
     src: url(fonts/NanumSquareL.woff) format("truetype");
 }
+
+@font-face {
+    font-family: "CookieRun Bold";
+    src: url(fonts/CookieRunBold.ttf) format("truetype");
+}
