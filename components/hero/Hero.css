@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: center;
 
-    padding-top: 10em;
+    padding-top: 18em;
 
     font-size: 1em;
     color: #ffffff;
@@ -34,9 +34,8 @@
 }
 
 #contents-main .chars {
-    max-width: 1900px;
-    width: 63.34em;
-    margin-top: -5em;
+    width: 67.5em;
+    margin-top: -9em;
 }
 
 #contents-main .stores {
@@ -59,10 +58,6 @@
 @media screen and (max-width: 1920px) {
     #contents-main {
         height: 22em;
-    }
-
-    #contents-main .chars {
-        width: 50em;
     }
 }
 
