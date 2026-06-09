@@ -14,7 +14,7 @@ nav {
 
     font-family: "NanumSquareB";
 
-    padding: 1em;
+    padding: 0 1em;
 }
 
 .nav-header {
@@ -24,12 +24,18 @@ nav {
 
 .logo {
     display: flex;
+    align-items: center;
+}
+
+.logo picture {
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
-    max-width: 150px;
-    width: 5em;
-    height: auto;
+    display: block;
+    width: auto;
+    height: 2.7em;
 }
 
 .menu-toggle {
