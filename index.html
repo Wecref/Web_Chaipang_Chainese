@@ -16,7 +16,7 @@
   <!-- Open Graph 메타태그 -->
   <meta property="og:url" content="https://chinese.chaipangkids.com/" />
   <meta property="og:title" content="Chaipang Chinese" />
-  <meta property="og:image" content="https://chinese.chaipangkids.com/resources/img/chars/chars02.png" />
+  <meta property="og:image" content="https://chinese.chaipangkids.com/shared/images/chars02.png" />
   <meta property="og:description"
     content="Chaipang Chinese is a children's educational that children can learn Chinese on their own while playing, singing, and having fun with Chaipang friends in the Fantasy world of Chaipang. Chaipang Chinese allows your child to speak Chinese right away without memorizing and studying. Instead, learn the tone and pronunciation perfectly with songs and notes." />
   <meta property="og:site_name" content="Chaipang Chinese" />
@@ -25,9 +25,14 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="차이팡 공유 썸네일" />
 
-  <link rel="shortcut icon" type="image/png" href="resources/img/siteLogo.png" />
+  <link rel="shortcut icon" type="image/png" href="shared/images/siteLogo.png" />
   <title>Chaipang Chinese</title>
-  <script type="module" src="./routing.js"></script>
+  <script>
+    (function () {
+      var lang = (navigator.language || navigator.userLanguage).substr(0, 2);
+      window.location.replace(lang === "ko" ? "kr_index.html" : "en_index.html");
+    })();
+  </script>
 </head>
 
 <body>

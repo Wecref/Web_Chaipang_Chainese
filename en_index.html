@@ -16,7 +16,7 @@
   <!-- Open Graph 메타태그 -->
   <meta property="og:url" content="https://chinese.chaipangkids.com/" />
   <meta property="og:title" content="Chaipang Chinese" />
-  <meta property="og:image" content="https://chinese.chaipangkids.com/resources/img/chars/chars02.png" />
+  <meta property="og:image" content="https://chinese.chaipangkids.com/shared/images/chars02.png" />
   <meta property="og:description"
     content="Chaipang Chinese is a children's educational that children can learn Chinese on their own while playing, singing, and having fun with Chaipang friends in the Fantasy world of Chaipang. Chaipang Chinese allows your child to speak Chinese right away without memorizing and studying. Instead, learn the tone and pronunciation perfectly with songs and notes." />
   <meta property="og:site_name" content="Chaipang Chinese" />
@@ -25,7 +25,7 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="차이팡 공유 썸네일" />
 
-  <link rel="shortcut icon" type="image/png" href="resources/img/siteLogo.png" />
+  <link rel="shortcut icon" type="image/png" href="shared/images/siteLogo.png" />
   <title>Chaipang Chinese</title>
 
   <link rel="stylesheet" href="./main.css" />
@@ -37,10 +37,13 @@
   <nav>
     <div class="nav-header">
       <a href="/" class="logo">
-        <img src="./resources/img/en/siteNavLogo.png" alt="위크리프 로고" />
+        <picture>
+          <source srcset="./components/nav/images/siteNavLogo_en.webp" type="image/webp">
+          <img src="./components/nav/images/siteNavLogo_en.png" alt="위크리프 로고" >
+        </picture>
       </a>
       <button class="menu-toggle" aria-label="메뉴 토글">
-        <img src="./resources/img/menu.svg" alt="메뉴 아이콘" />
+        <img src="./components/nav/images/menu.svg" alt="메뉴 아이콘" />
       </button>
     </div>
     <div class="nav-body">
@@ -56,17 +59,26 @@
       <ul class="social-links">
         <li>
           <a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA" target="_blank">
-            <img src="./resources/img/youtubeLogo.png" alt="유튜브" />
+            <picture>
+              <source srcset="./shared/images/youtubeLogo.webp" type="image/webp">
+              <img src="./shared/images/youtubeLogo.png" alt="유튜브" >
+            </picture>
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com/chaipang.kids" target="_blank">
-            <img src="./resources/img/instagramLogo.png" alt="인스타그램" />
+            <picture>
+              <source srcset="./shared/images/instagramLogo.webp" type="image/webp">
+              <img src="./shared/images/instagramLogo.png" alt="인스타그램" >
+            </picture>
           </a>
         </li>
         <li>
           <a href="https://blog.naver.com/chaipang_kids" target="_blank">
-            <img src="./resources/img/blogLogo.png" alt="블로그" />
+            <picture>
+              <source srcset="./shared/images/blogLogo.webp" type="image/webp">
+              <img src="./shared/images/blogLogo.png" alt="블로그" >
+            </picture>
           </a>
         </li>
       </ul>
@@ -89,28 +101,49 @@
     </div>
     <div class="stores">
       <a href="https://play.google.com/store/apps/details?id=com.wecref.chaipang.chinese&hl=en&gl=kr" target="_blank">
-        <img src="resources/img/googleStore.png" alt="구글 스토어 이미지">
+        <picture>
+          <source srcset="./components/hero/images/googleStore.webp" type="image/webp">
+          <img src="./components/hero/images/googleStore.png" alt="구글 스토어 이미지">
+        </picture>
       </a>
       <a href="https://apps.apple.com/us/app/%EC%B0%A8%EC%9D%B4%ED%8C%A1-%EC%A4%91%EA%B5%AD%EC%96%B4/id1570555582"
         target="_blank">
-        <img src="resources/img/appleStore.png" alt="애플 스토어 이미지">
+        <picture>
+          <source srcset="./components/hero/images/appleStore.webp" type="image/webp">
+          <img src="./components/hero/images/appleStore.png" alt="애플 스토어 이미지">
+        </picture>
       </a>
     </div>
-    <img class="chars" src="./resources/img/chars/chars01.png" alt="캐릭터" />
+    <picture>
+      <source srcset="./components/hero/images/chars01.webp" type="image/webp">
+      <img class="chars" src="./components/hero/images/chars01.png" alt="캐릭터" >
+    </picture>
   </div>
   <div class="waveDeco"></div>
 
   <span id="menu-features"></span>
   <div class="contents-card">
     <div class="deco">
-      <img src="resources/img/chars/mico.png" alt="미코 이미지" class="mico">
-      <img src="resources/img/chars/malco.png" alt="말코 이미지" class="malco">
+      <picture>
+        <source srcset="./components/section-features/images/mico.webp" type="image/webp">
+        <img src="./components/section-features/images/mico.png" alt="미코 이미지" class="mico">
+      </picture>
+      <picture>
+        <source srcset="./components/section-features/images/malco.webp" type="image/webp">
+        <img src="./components/section-features/images/malco.png" alt="말코 이미지" class="malco">
+      </picture>
     </div>
     <div class="main">
       <div class="titleStar">
-        <img src="resources/img/deco/pinkStar02.png" alt="별 이미지" class="star">
+        <picture>
+          <source srcset="./shared/images/pinkStar02.webp" type="image/webp">
+          <img src="./shared/images/pinkStar02.png" alt="별 이미지" class="star">
+        </picture>
         <h1 class="title indigoTxt">Have fun in the fantasy world!</h1>
-        <img src="resources/img/deco/pinkStar01.png" alt="별 이미지" class="star">
+        <picture>
+          <source srcset="./shared/images/pinkStar01.webp" type="image/webp">
+          <img src="./shared/images/pinkStar01.png" alt="별 이미지" class="star">
+        </picture>
       </div>
       <div class="description mediumpurpleTxt">
         <p>
@@ -119,16 +152,37 @@
         </p>
       </div>
       <div class="tutorial">
-        <img src="resources/img/en/description01.png" alt="튜토리얼 이미지">
-        <img src="resources/img/en/description02.png" alt="튜토리얼 이미지">
-        <img src="resources/img/en/description03.png" alt="튜토리얼 이미지">
-        <img src="resources/img/en/description04.png" alt="튜토리얼 이미지">
-        <img src="resources/img/en/description05.png" alt="튜토리얼 이미지">
-        <img src="resources/img/en/description06.png" alt="튜토리얼 이미지">
+        <picture>
+          <source srcset="./components/section-features/images/description01_en.webp" type="image/webp">
+          <img src="./components/section-features/images/description01_en.png" alt="튜토리얼 이미지">
+        </picture>
+        <picture>
+          <source srcset="./components/section-features/images/description02_en.webp" type="image/webp">
+          <img src="./components/section-features/images/description02_en.png" alt="튜토리얼 이미지">
+        </picture>
+        <picture>
+          <source srcset="./components/section-features/images/description03_en.webp" type="image/webp">
+          <img src="./components/section-features/images/description03_en.png" alt="튜토리얼 이미지">
+        </picture>
+        <picture>
+          <source srcset="./components/section-features/images/description04_en.webp" type="image/webp">
+          <img src="./components/section-features/images/description04_en.png" alt="튜토리얼 이미지">
+        </picture>
+        <picture>
+          <source srcset="./components/section-features/images/description05_en.webp" type="image/webp">
+          <img src="./components/section-features/images/description05_en.png" alt="튜토리얼 이미지">
+        </picture>
+        <picture>
+          <source srcset="./components/section-features/images/description06_en.webp" type="image/webp">
+          <img src="./components/section-features/images/description06_en.png" alt="튜토리얼 이미지">
+        </picture>
       </div>
     </div>
     <div class="deco">
-      <img src="resources/img/chars/conzy.png" alt="콘지 이미지" class="conzy">
+      <picture>
+        <source srcset="./shared/images/conzy.webp" type="image/webp">
+        <img src="./shared/images/conzy.png" alt="콘지 이미지" class="conzy">
+      </picture>
     </div>
   </div>
 
@@ -136,13 +190,22 @@
   <span id="menu-how"></span>
   <div class="contents-card how">
     <div class="deco">
-      <img src="resources/img/chars/gon.png" alt="곤 이미지" class="gon">
+      <picture>
+        <source srcset="./components/section-how/images/gon.webp" type="image/webp">
+        <img src="./components/section-how/images/gon.png" alt="곤 이미지" class="gon">
+      </picture>
     </div>
     <div class="main">
       <div class="titleStar">
-        <img src="resources/img/deco/pinkStar02.png" alt="별 이미지" class="star">
+        <picture>
+          <source srcset="./shared/images/pinkStar02.webp" type="image/webp">
+          <img src="./shared/images/pinkStar02.png" alt="별 이미지" class="star">
+        </picture>
         <h1 class="title indigoTxt">How to enjoy Chaipang Chinese</h1>
-        <img src="resources/img/deco/pinkStar01.png" alt="별 이미지" class="star">
+        <picture>
+          <source srcset="./shared/images/pinkStar01.webp" type="image/webp">
+          <img src="./shared/images/pinkStar01.png" alt="별 이미지" class="star">
+        </picture>
       </div>
       <div class="description plumTxt">
         <p>
@@ -150,21 +213,57 @@
         </p>
       </div>
       <div class="tutorial">
-        <img src="resources/img/en/play01.png" alt="튜토리얼 이미지">
-        <img src="resources/img/en/play02.png" alt="튜토리얼 이미지">
-        <img src="resources/img/en/play03.png" alt="튜토리얼 이미지">
-        <img src="resources/img/en/play04.png" alt="튜토리얼 이미지">
-        <img src="resources/img/en/play05.png" alt="튜토리얼 이미지">
-        <img src="resources/img/en/play06.png" alt="튜토리얼 이미지">
-        <img src="resources/img/en/play07.png" alt="튜토리얼 이미지">
-        <img src="resources/img/en/play08.png" alt="튜토리얼 이미지">
-        <img src="resources/img/en/play09.png" alt="튜토리얼 이미지">
-        <img src="resources/img/en/play10.png" alt="튜토리얼 이미지">
+        <picture>
+          <source srcset="./components/section-how/images/play01_en.webp" type="image/webp">
+          <img src="./components/section-how/images/play01_en.png" alt="튜토리얼 이미지">
+        </picture>
+        <picture>
+          <source srcset="./components/section-how/images/play02_en.webp" type="image/webp">
+          <img src="./components/section-how/images/play02_en.png" alt="튜토리얼 이미지">
+        </picture>
+        <picture>
+          <source srcset="./components/section-how/images/play03_en.webp" type="image/webp">
+          <img src="./components/section-how/images/play03_en.png" alt="튜토리얼 이미지">
+        </picture>
+        <picture>
+          <source srcset="./components/section-how/images/play04_en.webp" type="image/webp">
+          <img src="./components/section-how/images/play04_en.png" alt="튜토리얼 이미지">
+        </picture>
+        <picture>
+          <source srcset="./components/section-how/images/play05_en.webp" type="image/webp">
+          <img src="./components/section-how/images/play05_en.png" alt="튜토리얼 이미지">
+        </picture>
+        <picture>
+          <source srcset="./components/section-how/images/play06_en.webp" type="image/webp">
+          <img src="./components/section-how/images/play06_en.png" alt="튜토리얼 이미지">
+        </picture>
+        <picture>
+          <source srcset="./components/section-how/images/play07_en.webp" type="image/webp">
+          <img src="./components/section-how/images/play07_en.png" alt="튜토리얼 이미지">
+        </picture>
+        <picture>
+          <source srcset="./components/section-how/images/play08_en.webp" type="image/webp">
+          <img src="./components/section-how/images/play08_en.png" alt="튜토리얼 이미지">
+        </picture>
+        <picture>
+          <source srcset="./components/section-how/images/play09_en.webp" type="image/webp">
+          <img src="./components/section-how/images/play09_en.png" alt="튜토리얼 이미지">
+        </picture>
+        <picture>
+          <source srcset="./components/section-how/images/play10_en.webp" type="image/webp">
+          <img src="./components/section-how/images/play10_en.png" alt="튜토리얼 이미지">
+        </picture>
       </div>
     </div>
     <div class="deco">
-      <img src="resources/img/chars/dora.png" alt="도라 이미지" class="dora">
-      <img src="resources/img/chars/gabi.png" alt="가비 이미지" class="gabi">
+      <picture>
+        <source srcset="./components/section-how/images/dora.webp" type="image/webp">
+        <img src="./components/section-how/images/dora.png" alt="도라 이미지" class="dora">
+      </picture>
+      <picture>
+        <source srcset="./components/section-how/images/gabi.webp" type="image/webp">
+        <img src="./components/section-how/images/gabi.png" alt="가비 이미지" class="gabi">
+      </picture>
     </div>
   </div>
 
@@ -172,16 +271,25 @@
   <span id="menu-friends"></span>
   <div class="contents-card friends">
     <div class="deco">
-      <img src="resources/img/chars/finn.png" alt="finn 이미지" class="finn">
+      <picture>
+        <source srcset="./components/section-friends/images/finn.webp" type="image/webp">
+        <img src="./components/section-friends/images/finn.png" alt="finn 이미지" class="finn">
+      </picture>
     </div>
     <div class="main">
       <div class="titleStar">
-        <img src="resources/img/deco/yellowStar02.png" alt="별 이미지" class="star">
+        <picture>
+          <source srcset="./shared/images/yellowStar02.webp" type="image/webp">
+          <img src="./shared/images/yellowStar02.png" alt="별 이미지" class="star">
+        </picture>
         <h1 class="title indigoTxt">
           Introduce Chaipang friends <br>
           in the fantasy world!
         </h1>
-        <img src="resources/img/deco/yellowStar01.png" alt="별 이미지" class="star">
+        <picture>
+          <source srcset="./shared/images/yellowStar01.webp" type="image/webp">
+          <img src="./shared/images/yellowStar01.png" alt="별 이미지" class="star">
+        </picture>
       </div>
       <div class="description paleturquoiseTxt">
         <p>
@@ -191,11 +299,17 @@
         </p>
       </div>
       <div class="promotion">
-        <img src="resources/img/en/promotion.png" alt="튜토리얼 이미지">
+        <picture>
+          <source srcset="./components/section-friends/images/promotion_en.webp" type="image/webp">
+          <img src="./components/section-friends/images/promotion_en.png" alt="튜토리얼 이미지">
+        </picture>
       </div>
     </div>
     <div class="deco">
-      <img src="resources/img/chars/conzy.png" alt="숨김 이미지" class="hind">
+      <picture>
+        <source srcset="./shared/images/conzy.webp" type="image/webp">
+        <img src="./shared/images/conzy.png" alt="숨김 이미지" class="hind">
+      </picture>
     </div>
   </div>
 
@@ -203,7 +317,10 @@
   <span id="menu-company"></span>
   <div class="wecref dimgrayTxt">
     <div class="title">
-      <img src="resources/img/wecrefLogo01.png" alt="위크리프 로고">
+      <picture>
+        <source srcset="./components/section-company/images/wecrefLogo01.webp" type="image/webp">
+        <img src="./components/section-company/images/wecrefLogo01.png" alt="위크리프 로고">
+      </picture>
       <p><span class="darkturquoiseTxt">We crea</span>te a <span class="darkturquoiseTxt">F</span>antasy
         World for
         Children around the world</p>
@@ -223,9 +340,18 @@
       </p>
     </div>
     <div class="staff">
-      <img src="resources/img/chars/staffFace01.png" alt="staff 이미지">
-      <img src="resources/img/chars/staffFace02.png" alt="staff 이미지">
-      <img src="resources/img/chars/staffFace03.png" alt="staff 이미지">
+      <picture>
+        <source srcset="./components/section-company/images/staffFace01.webp" type="image/webp">
+        <img src="./components/section-company/images/staffFace01.png" alt="staff 이미지">
+      </picture>
+      <picture>
+        <source srcset="./components/section-company/images/staffFace02.webp" type="image/webp">
+        <img src="./components/section-company/images/staffFace02.png" alt="staff 이미지">
+      </picture>
+      <picture>
+        <source srcset="./components/section-company/images/staffFace03.webp" type="image/webp">
+        <img src="./components/section-company/images/staffFace03.png" alt="staff 이미지">
+      </picture>
     </div>
   </div>
   <div class="waveDeco rotate180"></div>
@@ -233,17 +359,26 @@
     <ul class="footer-links">
       <li>
         <a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA" target="_blank">
-          <img src="./resources/img/youtubeLogo.png" alt="유튜브 채널" />
+          <picture>
+            <source srcset="./shared/images/youtubeLogo.webp" type="image/webp">
+            <img src="./shared/images/youtubeLogo.png" alt="유튜브 채널" >
+          </picture>
         </a>
       </li>
       <li>
         <a href="https://www.instagram.com/chaipang.kids" target="_blank">
-          <img src="./resources/img/instagramLogo.png" alt="인스타그램 페이지" />
+          <picture>
+            <source srcset="./shared/images/instagramLogo.webp" type="image/webp">
+            <img src="./shared/images/instagramLogo.png" alt="인스타그램 페이지" >
+          </picture>
         </a>
       </li>
       <li>
         <a href="https://blog.naver.com/chaipang_kids" target="_blank">
-          <img src="./resources/img/blogLogo.png" alt="네이버 블로그" />
+          <picture>
+            <source srcset="./shared/images/blogLogo.webp" type="image/webp">
+            <img src="./shared/images/blogLogo.png" alt="네이버 블로그" >
+          </picture>
         </a>
       </li>
     </ul>
@@ -254,7 +389,10 @@
         <li>Terms & Conditions | Privacy Policy</li>
       </ul>
       <ul class="info-list">
-        <li><img src="./resources/img/wecrefLogo.png" alt="위크리프 로고" /></li>
+        <li><picture>
+  <source srcset="./components/footer/images/wecrefLogo.webp" type="image/webp">
+  <img src="./components/footer/images/wecrefLogo.png" alt="위크리프 로고" >
+</picture></li>
         <li>©2021 Wecref All Right Reserved.</li>
       </ul>
       <ul class="info-list">

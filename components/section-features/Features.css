@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+.contents-card {
+    width: 100%;
+    height: auto;
+
+    margin: 6em 0;
+
+    background-image: url("../../shared/images/whiteWallpaper02.png");
+    background-position: center top;
+    background-repeat: repeat;
+    background-size: cover;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+}
+
+.contents-card .titleStar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents-card .titleStar .title {
+    margin: 0 .5em;
+    font-family: "NanumSquareEB";
+}
+
+.contents-card .description {
+    line-height: 1.5em;
+}
+
+.contents-card .main {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents-card .main .tutorial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 3em;
+}
+
+.contents-card .main .tutorial img {
+    max-width: 501px;
+    width: 16.7em;
+    margin: .4em;
+}
+
+.contents-card .deco {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contents-card .deco .mico {
+    max-width: 209px;
+    width: 7em;
+
+}
+
+.contents-card .deco .conzy {
+    max-width: 222px;
+    width: 7.4em;
+
+}
+
+.contents-card .deco .malco {
+    max-width: 172px;
+    width: 5.8em;
+
+}
+
+.contents-card .deco .dora {
+    max-width: 201px;
+    width: 6.7em;
+
+}
+
+.contents-card .deco .gon {
+    max-width: 201px;
+    width: 6.7em;
+
+}
+
+.contents-card .deco .gabi {
+    max-width: 201px;
+    width: 6.7em;
+}
+
+.contents-card .deco .finn {
+    max-width: 201px;
+    width: 6.7em;
+    padding-bottom: 32em;
+
+}
+
+.contents-card .deco .hind {
+    max-width: 201px;
+    width: 6.7em;
+    visibility: hidden;
+}
+
+.contents-card .titleStar .star:first-child {
+    max-width: 72px;
+    width: 2.4em;
+}
+
+.contents-card .titleStar .star:last-child {
+    max-width: 39px;
+    width: 1.3em;
+}
+
+@media screen and (max-width: 1622px) {
+    .contents-card {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 944px) {
+    .contents-card .deco {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 584px) {
+    .contents-card {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 517px) {
+    .contents-card {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 454px) {
+    .contents-card {
+        font-size: .6em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .contents-card .titleStar .star {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .contents-card .titleStar {
+        font-size: .8em;
+    }
+
+    .contents-card .description br {
+        display: none;
+    }
+}
