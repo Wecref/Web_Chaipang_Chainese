@@ -22,7 +22,13 @@
     line-height: 1.5em;
 }
 
-#contents-main .info .title {
+#contents-main .info .description {
+    font-size: .93em;
+}
+
+#contents-main .info .bi {
+    width: 20em;
+    height: auto;
     margin-top: .6em;
     margin-bottom: 1.5em;
 }
