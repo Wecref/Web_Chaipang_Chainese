@@ -54,3 +54,41 @@
     width: 17em;
     height: auto;
 }
+
+.contents-card.studyBook .main .tutorial .step-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+}
+
+.contents-card.studyBook .main .tutorial .step-col img {
+    width: 100%;
+    height: auto;
+}
+
+.contents-card.studyBook .main .tutorial .step-col .qr-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: .5em;
+    width: 17em;
+    margin-top: -2em;
+}
+
+.contents-card.studyBook .main .tutorial .step-col picture:nth-child(1) img {
+    width: 17em;
+}
+
+.contents-card.studyBook .main .tutorial .step-col .qr-row picture img {
+    width: 10.4em;
+}
+
+.contents-card.studyBook .main .tutorial .step-col > picture:last-child {
+    align-self: flex-end;
+}
+
+.contents-card.studyBook .main .tutorial .step-col > picture:last-child img {
+    width: 10.4em;
+    margin-top: -2em;
+}
