@@ -16,3 +16,7 @@
 .contents-card.how .titleStar h1 {
     color: white;
 }
+
+.contents-card.how .deco .finn {
+    padding-bottom: 0;
+}
