@@ -30,6 +30,7 @@
 }
 
 #contents-main .info .description {
+    white-space: nowrap;
     font-size: .93em;
     color: #ffffff;
     text-align: center;
