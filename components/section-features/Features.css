@@ -142,32 +142,20 @@
 }
 
 @media screen and (max-width: 944px) {
-    .contents-card .deco {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 584px) {
     .contents-card {
         font-size: .8em;
     }
 }
 
-@media screen and (max-width: 517px) {
-    .contents-card {
-        font-size: .7em;
-    }
-}
-
-@media screen and (max-width: 454px) {
-    .contents-card {
-        font-size: .6em;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .contents-card .titleStar .star {
+@media screen and (max-width: 500px) {
+    .contents-card .deco {
         display: none;
+    }
+    .contents-card .main {
+        width: 90%;
+    }
+    .contents-card .main .tutorial img {
+        margin: .4em .4em;
     }
 }
 
@@ -175,8 +163,21 @@
     .contents-card .titleStar {
         font-size: .8em;
     }
+}
 
-    .contents-card .description br {
-        display: none;
+@media screen and (max-width: 360px) {
+    .contents-card .main .tutorial img {
+        width: 90%;
+        margin: .4em auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .contents-card .main .tutorial img {
+        width: 16em;
+        margin: .4em .4em;
+    }
+    .contents-card .description {
+        white-space: normal;
     }
 }

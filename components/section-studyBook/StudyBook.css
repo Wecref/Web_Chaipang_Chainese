@@ -33,16 +33,11 @@
     align-self: flex-end;
 }
 
-@media screen and (max-width: 944px) {
-    .contents-card.studyBook .main > picture {
-        display: none;
-    }
-}
-
 .contents-card.studyBook .main picture img.dora {
     max-width: 201px;
     width: 6.7em;
     height: auto;
+    margin-left: -8.5em;
 }
 
 .contents-card.studyBook .main .tutorial {
@@ -52,6 +47,7 @@
     justify-content: center;
     align-items: center;
     gap: .75em;
+    margin-top: 0;
 }
 
 
@@ -72,7 +68,8 @@
 
 .contents-card.studyBook .main .tutorial .step-col .step-img {
     position: relative;
-    width: 17em;
+    max-width: 17em;
+    width: 100%;
 }
 
 .contents-card.studyBook .main .tutorial .step-col .step-img picture {
@@ -113,7 +110,8 @@
     flex-direction: row;
     justify-content: flex-start;
     gap: .5em;
-    width: 17em;
+    max-width: 17em;
+    width: 100%;
     margin-top: -1em;
     position: relative;
     z-index: 1;
@@ -123,12 +121,41 @@
     justify-content: flex-end;
 }
 
-.contents-card.studyBook .main .tutorial .step-col .qr-row picture {
-    display: block;
+.contents-card.studyBook .main .tutorial .step-col .qr-row a {
+    display: flex;
 }
 
 .contents-card.studyBook .main .tutorial .step-col .qr-row picture img {
     width: 10.4em;
     display: block;
     margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .contents-card.studyBook .main > picture {
+        display: none;
+    }
+    .contents-card.studyBook .main {
+        width: 100%;
+        justify-content: center;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .contents-card.studyBook {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .contents-card.studyBook {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .contents-card.studyBook {
+        font-size: .55em;
+    }
 }

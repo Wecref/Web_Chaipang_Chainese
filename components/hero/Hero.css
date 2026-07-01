@@ -21,7 +21,7 @@
 
 #contents-main .info {
     position: absolute;
-    top: 28%;
+    top: 29%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -56,8 +56,45 @@
     width: 6.8em;
 }
 
-@media screen and (max-width: 644px) {
-    #contents-main .info .description br {
-        display: none;
+@media screen and (max-width: 1440px) {
+    #contents-main .info {
+        top: 28%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    #contents-main .info {
+        top: 26%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #contents-main .info {
+        font-size: .85em;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    #contents-main .info .bi {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #contents-main .info {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #contents-main .info {
+        font-size: .6em;
+    }
+    #contents-main .info .bi {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+
