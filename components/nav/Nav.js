@@ -6,11 +6,13 @@ function ClickCss(target, targets) {
 export function InitMenu(targets) {
     targets.forEach(target => {
         target.addEventListener('click', event => {
-            event.preventDefault();
-            ClickCss(event.currentTarget, targets);
-            if (event.currentTarget.href) {
-                var targetAttr = event.currentTarget.getAttribute('target');
-                window.open(event.currentTarget.href, targetAttr || "_self");
+            var href = event.currentTarget.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                ClickCss(event.currentTarget, targets);
+            } else {
+                event.preventDefault();
+                ClickCss(event.currentTarget, targets);
+                window.open(event.currentTarget.href, event.currentTarget.getAttribute('target') || "_self");
             }
         });
     });
