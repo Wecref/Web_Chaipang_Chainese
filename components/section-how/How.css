@@ -3,24 +3,12 @@
 .contents-card.how {
     position: relative;
     margin: -1em 0;
-    padding: 5em 0;
-}
-
-.contents-card.how > picture.bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 108%;
-    overflow: hidden;
-    z-index: -1;
-}
-
-.contents-card.how > picture.bg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
+    padding: 5em 0 11em;
+    background-image: url(images/BG_3.webp);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    font-size: clamp(0.45rem, 1.5625vw, 30px);
 }
 
 .contents-card.how .main .tutorial {

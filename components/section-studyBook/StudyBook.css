@@ -4,6 +4,7 @@
     position: relative;
     width: 100%;
     margin: -1em 0;
+    font-size: clamp(0.45rem, 1.5625vw, 30px);
 }
 
 .contents-card.studyBook > picture {
@@ -129,33 +130,4 @@
     width: 10.4em;
     display: block;
     margin: 0;
-}
-
-@media screen and (max-width: 500px) {
-    .contents-card.studyBook .main > picture {
-        display: none;
-    }
-    .contents-card.studyBook .main {
-        width: 100%;
-        justify-content: center;
-        transform: translate(-50%, -50%);
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .contents-card.studyBook {
-        font-size: .8em;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .contents-card.studyBook {
-        font-size: .7em;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .contents-card.studyBook {
-        font-size: .55em;
-    }
 }

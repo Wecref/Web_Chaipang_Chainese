@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 .wecref {
-    padding: 12em 0 3.333em 0;
+    padding: 7em 0 3.333em 0;
+    font-size: clamp(0.45rem, 1.5625vw, 30px);
 }
 
 .wecref .title {
@@ -12,7 +13,6 @@
 }
 
 .wecref .title img {
-    max-width: 490px;
     width: 16.4em;
 }
 
@@ -51,20 +51,5 @@
 }
 
 .wecref .staff img {
-    max-width: 119px;
     width: 4em;
-}
-
-@media screen and (max-width: 622px) {
-    .wecref {
-        font-size: .8em;
-    }
-}
-
-
-
-@media screen and (max-width: 391px) {
-    .wecref .title {
-        font-size: .7em;
-    }
 }

@@ -2,6 +2,7 @@
 
 nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
@@ -90,7 +91,7 @@ nav {
 .nav-menus li a:hover,
 .social-links li a:hover,
 .language-selector li a:hover {
-    color: #1ec8c8;
+    color: #ff5a96;
 }
 
     .nav-menus li:nth-child(4)::after {
@@ -149,7 +150,7 @@ nav {
 
 .nav-menus a.active,
 .language-selector a.active {
-    color: #ff5a96;
+    color: #1ec8c8;
 }
 
 @media screen and (max-width: 1024px) {
@@ -169,6 +170,10 @@ nav {
 
     .nav-menus {
         flex-direction: column;
+    }
+
+    .nav-menus li:nth-child(4)::after {
+        display: none;
     }
 
     .menu-toggle img {
@@ -199,10 +204,6 @@ nav {
     .social-links li a,
     .language-selector li a {
         padding: .5em 0em;
-    }
-
-.nav-menus li:nth-child(4)::after {
-        display: none;
     }
 }
 
