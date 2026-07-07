@@ -2,9 +2,9 @@
 
 .contents-card.studyBook {
     position: relative;
+    z-index: 1;
     width: 100%;
-    margin: -1em 0;
-    font-size: clamp(0.45rem, 1.5625vw, 30px);
+    margin: 0 0 -1em;
 }
 
 .contents-card.studyBook > picture {
@@ -26,8 +26,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: max-content;
+    width: 100%;
     max-width: 100%;
+    padding: .5em;
+    box-sizing: border-box;
 }
 
 .contents-card.studyBook .main > picture {
@@ -38,17 +40,27 @@
     max-width: 201px;
     width: 6.7em;
     height: auto;
-    margin-left: -8.5em;
+    position: relative;
+    top: -13em;
+    left: -5em;
+}
+
+@media screen and (max-width: 768px) {
+    .contents-card.studyBook .main picture img.dora {
+        display: none;
+    }
 }
 
 .contents-card.studyBook .main .tutorial {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: .75em;
-    margin-top: 0;
+    margin-top: -12em;
+    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -61,6 +73,9 @@
 }
 
 .contents-card.studyBook .main .tutorial .step-col {
+    flex: 1;
+    max-width: 17em;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,6 +84,7 @@
 
 .contents-card.studyBook .main .tutorial .step-col .step-img {
     position: relative;
+    aspect-ratio: 504 / 701;
     max-width: 17em;
     width: 100%;
 }
@@ -123,11 +139,15 @@
 }
 
 .contents-card.studyBook .main .tutorial .step-col .qr-row a {
+    flex: 0 0 50%;
+    max-width: 10.4em;
     display: flex;
 }
 
 .contents-card.studyBook .main .tutorial .step-col .qr-row picture img {
-    width: 10.4em;
+    max-width: 10.4em;
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0;
 }

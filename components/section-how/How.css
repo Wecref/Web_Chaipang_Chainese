@@ -2,13 +2,13 @@
 
 .contents-card.how {
     position: relative;
-    margin: -1em 0;
+    z-index: 2;
+    margin: .5em 0 -1em;
     padding: 5em 0 11em;
     background-image: url(images/BG_3.webp);
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 100% auto;
-    font-size: clamp(0.45rem, 1.5625vw, 30px);
+    background-size: cover;
 }
 
 .contents-card.how .main .tutorial {
@@ -19,6 +19,39 @@
     width: 15.9em;
     height: auto;
     margin: 0 1em;
+}
+
+@media screen and (max-width: 1374px) {
+    .contents-card.how .main .tutorial {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        gap: 0;
+        width: 100%;
+    }
+
+    .contents-card.how .main .tutorial img {
+        margin: 0 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contents-card.how .main .tutorial {
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5em;
+        justify-content: normal;
+    }
+
+    .contents-card.how .main .tutorial img {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .contents-card.how {
+        padding: 0 0 11em;
+    }
 }
 
 .contents-card.how .titleStar h1 {

@@ -33,7 +33,7 @@
 </head>
 
 <body>
-  <span id="menu-main"></span>
+  <span></span>
   <nav>
     <div class="nav-header">
       <a href="/" class="logo">
@@ -50,8 +50,8 @@
       <ul class="nav-menus">
         <li><a href="#menu-main">About</a></li>
         <li><a href="#menu-features">Features &amp; Content</a></li>
-        <li><a href="#menu-how">How to Enjoy</a></li>
         <li><a href="#menu-study">How to Learn</a></li>
+        <li><a href="#menu-how">How to Enjoy</a></li>
         <li><a href="https://chaipangkids.com/en_index.html" target="_blank">Chaipang kids</a></li>
         <li><a href="https://wecref.com/en_index.html" target="_blank">Wecref Co., Ltd.</a></li>
       </ul>
@@ -93,7 +93,11 @@
       <source srcset="./components/hero/images/banner_BG.webp" type="image/webp">
       <img src="./components/hero/images/banner_BG.png" alt="배너">
     </picture>
-    <div class="info">
+  </div>
+
+  <span></span>
+  <div class="contents-card">
+    <div class="info" id="menu-main">
       <p class="description">
         Learn Chinese tones and pronunciation naturally while singing and dancing! <br>
         Children can speak Chinese right away.
@@ -115,11 +119,6 @@
         </a>
       </div>
     </div>
-  </div>
-
-
-  <span id="menu-features"></span>
-  <div class="contents-card">
     <div class="deco">
       <picture>
         <source srcset="./components/section-features/images/mico.webp" type="image/webp">
@@ -130,7 +129,7 @@
         <img src="./components/section-features/images/malco.png" alt="말코 이미지" class="malco">
       </picture>
     </div>
-    <div class="main">
+    <div class="main" id="menu-features">
       <div class="titleStar">
         <picture>
           <source srcset="./shared/images/pinkStar02.webp" type="image/webp">
@@ -183,9 +182,9 @@
     </div>
   </div>
 
-  <span id="menu-how"></span>
+  <span></span>
 
-  <div class="contents-card studyBook">
+  <div class="contents-card studyBook" id="menu-study">
     <picture>
       <source srcset="./components/section-studyBook/images/BG_2.webp" type="image/webp">
       <img src="./components/section-studyBook/images/BG_2.png" alt="배경">
@@ -266,8 +265,8 @@
     </div>
   </div>
 
-  <span id="menu-study"></span>
-  <div class="contents-card how">
+  <span></span>
+  <div class="contents-card how" id="menu-how">
     <div class="deco">
       <picture>
         <source srcset="./components/section-how/images/gon.webp" type="image/webp">
@@ -353,9 +352,7 @@
         <source srcset="./components/section-company/images/wecrefLogo01.webp" type="image/webp">
         <img src="./components/section-company/images/wecrefLogo01.png" alt="위크리프 로고">
       </picture>
-      <p><span class="darkturquoiseTxt">We crea</span>te a <span class="darkturquoiseTxt">F</span>antasy
-        World for
-        Children around the world</p>
+      <p><span class="darkturquoiseTxt">We crea</span>te a <span class="darkturquoiseTxt">F</span>antasy World<span class="line-break"><br></span> for Children around the World.</p>
     </div>
     <div class="description">
       <p>
@@ -421,11 +418,11 @@
           </a>
       </li>
     </ul>
-    <div class="footer-info">
+    <div class="footer-info footer-row">
       <ul class="info-list">
         <li><span>Wecref Co., Ltd</span><span>| CEO PARK, Jeongyeon</span></li>
         <li><span>Business registration number</span><span>| 281-81-01776</span></li>
-        <li><span>Terms & Conditions</span><span>| Privacy Policy</span></li>
+        <li><span>Terms &amp; Conditions</span><span>| Privacy Policy</span></li>
       </ul>
       <ul class="info-list">
         <li>
@@ -442,6 +439,23 @@
         <li><span>Tel</span><span>| +82 2 508 0710</span></li>
         <li><span>E-mail</span><span>| support@wecref.com, jyp@wecref.com</span></li>
       </ul>
+    </div>
+    <div class="footer-col">
+      <div class="col-cards">
+        <p><strong>Wecref Co., Ltd</strong> <span>CEO PARK, Jeongyeon</span></p>
+        <p><strong>Business Registration Number</strong> <span>281-81-01776</span></p>
+        <p><span class="label">Terms &amp; Conditions</span> <span>Privacy Policy</span></p>
+        <p><strong>Tel</strong> <span>+82 2 508 0710</span></p>
+        <p><strong>Address</strong> <span>5F, 603, Eonju-ro, Gangnam-gu,<br>Seoul, Republic of Korea</span></p>
+        <p><strong>Email</strong> <span>support@wecref.com, jyp@wecref.com</span></p>
+      </div>
+      <div class="col-logo">
+        <picture>
+          <source srcset="./components/footer/images/wecrefLogo.webp" type="image/webp">
+          <img src="./components/footer/images/wecrefLogo.png" alt="wecref logo" />
+        </picture>
+        <p>©2021 Wecref All Right Reserved.</p>
+      </div>
     </div>
   </footer>
 </body>

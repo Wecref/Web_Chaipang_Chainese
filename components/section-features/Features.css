@@ -3,15 +3,59 @@
 .contents-card {
     width: 100%;
     position: relative;
-    margin: 5em 0;
+    margin: 1em 0 5em;
     text-align: center;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     background-image: url(images/BG_1.webp);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100% auto;
-    font-size: clamp(0.45rem, 1.5625vw, 30px);
+}
+
+.contents-card .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #B480FF;
+}
+
+.contents-card .info .description {
+    font-size: 1.205em;
+    line-height: 1.5em;
+}
+
+.contents-card .info .bi {
+    width: 20em;
+    height: auto;
+    margin: .35em 0;
+}
+
+.contents-card .info .stores {
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+
+.contents-card .info .stores img {
+    max-width: 200px;
+    width: 6.8em;
+}
+
+@media screen and (max-width: 425px) {
+    .contents-card .info .bi {
+        width: 14em;
+    }
+
+    .contents-card .info .stores img {
+        width: 5.5em;
+    }
+
+    .contents-card .info .description {
+        font-size: .8em;
+    }
 }
 
 .contents-card .titleStar {
@@ -31,7 +75,7 @@
 .contents-card .description {
     line-height: 1.5em;
     font-size: 1.5em;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .contents-card .main {
@@ -40,6 +84,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 6em;
 }
 
 .contents-card .main .tutorial {
@@ -63,6 +108,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .contents-card .deco {
+        display: none;
+    }
 }
 
 .contents-card .deco .mico {
@@ -121,4 +172,35 @@
 .contents-card .titleStar .star:last-child {
     max-width: 39px;
     width: 1.3em;
+}
+
+@media screen and (max-width: 667px) {
+    .contents-card .titleStar .title {
+        font-size: clamp(12px, 5vw, 2.667em);
+    }
+
+    .contents-card .description {
+        font-size: clamp(12px, 3.5vw, 1.5em);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contents-card .main {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1374px) {
+    .contents-card .main .tutorial {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        width: 100%;
+        margin-top: 3em;
+    }
+
+    .contents-card .main .tutorial img {
+        width: 100%;
+        margin: 0;
+    }
 }
